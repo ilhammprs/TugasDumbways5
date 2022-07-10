@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>contact</title>
+</head>
+<body>
+    
+    <nav>
+        <div class="nav_left">
+            <a href="index.html">
+                <img src="assets/img/icon.png"></a>
+            <ul>
+              <li>
+                 <a href="index.html">Home</a>
+               </li>
+                  <li>
+                    <a href="blog.html">My Blog</a>
+                 </li>
+            </ul>
+        </div>
+        <div class="nav_right">
+            <a href="contact.html">Contact Me</a>
+        </div>
+    </nav>
+
+    <div class="from">
+        <form action class="data">
+            <h1>You can contact me</h1>
+            <div>
+                 <label for="name">Name</label>
+                <input id="name" type="text" required placeholder="Input nama anda">
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input id="email" type="email" required placeholder="Input email anda">
+            </div>
+            <div>
+                <label for="phone">Phone Number</label>
+                <input id="phone" type="text" required placeholder="Input nomer anda">
+            </div>
+            <div>
+                <label for="subject">Subject</label>
+                <select id="subject">
+                        <option>Project baru</option>
+                        <option>Project lama</option>
+                        <option>Job baru</option>
+                </select>
+            </div>
+            <div>
+                <label for="message">Your Message</label>
+                <textarea name="message" id="message"></textarea>
+            </div>
+            <div class="button">
+                <button type="button" onclick="getEmail()">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+<script src="assets/js/index.js"></script>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/myBlog.css">
+    <title>My blog | Tugas 5</title>
+</head>
+<body>  
+    <nav>
+        <div class="nav_left">
+            <a href="index.html">
+                <img src="assets/img/icon.png"></a>
+            <ul>
+              <li>
+                 <a href="index.html">Home</a>
+               </li>
+                  <li>
+                    <a href="blog.html">My Blog</a>
+                 </li>
+            </ul>
+        </div>
+        <div class="nav_right">
+            <a href="contact.html">Contact Me</a>
+        </div>
+    </nav>
+    <!--halaman Blog-->
+    <div class="blog-post">
+        <div class="blog-tab">
+            <form onsubmit="addBlog(event)">
+                <h1 class="judulBlog">Buat Blog Baru</h1>
+                <div>
+                    <label for="judulBlog1">Judul</label>
+                    <input type="text" id="judulBlog1" placeholder="Tulis judul blog">
+                </div>
+                <div class="dataBlog">
+                    <div class="leftBlog">
+                        <div>
+                            <label for="startDate">Start Data</label>
+                            <input type="date" id="startDate">
+                        </div>
+                    </div>
+                    <div class="rightBlog">
+                        <div>
+                            <label for="endDate">End Data</label>
+                            <input type="date" id="endDate">
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <label for="descBlog">Deskripsi</label>
+                    <textarea type="text" id="descBlog" placeholder="Deskripsi"></textarea>
+                </div>
+
+                <div class="checkBox1">
+                    <label class="teknologiLab">Teknologi:</label>
+                    <div class="checkBox2">
+                        <div>
+                            <input type="checkbox" id="angular" name="Blog" value="angular">
+                            <label for="angular">Angular</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="react-js" name="Blog" value="react">
+                            <label for="react-js">React JS</label>
+                        </div>
+                    </div>
+                    <div class="checkBox3">
+                        <div>
+                            <input type="checkbox" id="node-js" name="Blog" value="node-js">
+                            <label for="node-js">Node JS</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="vue-js" name="Blog" value="vuejs">
+                            <label for="vue-js">Vue JS</label>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <label for="inputFoto">Upload Image</label>
+                    <input type="file" name="input" id="inputFoto">
+                </div>
+                <div class="buttonP">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- Blog List -->
+    <div class="listBlog">
+        <h1 class="judulBlog">My blog</h1>
+        <div id="listCard" class="blogContainer">
+            <div class="listCt">
+                <img src="assets/img/icon.png">
+                <a href="blogDetail.html" class="cardJudul">node-js</a>
+                    <p class="duration">durasi : 3 bulan </p>
+                    <div class="desc"><p> Lorem ipsum dolor sit amet consectetur adipisicing elit. </p></div>
+                    <div id="iconCd" class="iconCd">
+                        <i class="fa-brands fa-node-js" title="node.js"></i>
+                        <i class="fa-brands fa-react" title="react.js"></i>
+                        <i class="fa-regular fa-clock" title="moment.js"></i>
+                        <i class="fa-brands fa-laravel" title="laravel"></i>
+                    </div>
+                    <div class="frist">
+                        <button type="button" class="fristEdit">edit</button>
+                        <button type="button" class="fristDelete">delete</button>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+<script src="assets/js/myBlog.js"></script>
+
+</html>

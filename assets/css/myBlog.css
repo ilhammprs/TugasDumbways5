@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+body{
+    font-family: 'Quicksand', sans-serif; 
+    background-color: #E3E7EB;
+    margin: 0;
+}
+nav{
+    margin-bottom: 3rem;
+    display: flex;
+    height: 8vh;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 10px 30px 1px #85858b;
+    padding: 3px;
+}
+nav div{
+    display: flex;
+    align-items: center;
+}
+.nav_left{
+    font-weight: bolder;
+    flex: auto;
+    padding-left: 30px;
+    align-items: center;
+}
+.nav_left img{
+    width: 55px;
+    border-radius: 50%;
+    margin-right: 3rem;
+}    
+.nav_left ul{
+    list-style: none;
+}
+.nav_left ul li{
+    display: inline;
+    padding-right: 12px;
+    position: relative;  
+}
+.nav_left ul li a{
+    text-decoration: none;
+    margin-right: 3rem;
+    color: #111727;
+}
+.nav_right{
+    flex: 50%;
+    justify-content: flex-end;
+    padding-right: 90px;
+}
+.nav_right a {
+    text-decoration: none;
+    background-color: #111727;
+    padding: 6px 18px;
+    color: white;
+    border-radius: 30px;
+}
+.blog-post{
+    width: 55%;
+    padding: 30px 20px;
+    border-radius: 30px;
+    margin: 30px auto;
+    background-color: #fff;
+    box-shadow: 0px 10px 30px 1px #85858b;
+    display: flex;
+    justify-content: center;
+}
+.blog-tab label {
+    color:rgb(50, 50, 50);
+    font-size: 20px;
+    font-weight: 700;
+}
+.blog-tab h1{
+    text-align: center;
+    display: block;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+.blog-tab input, textarea{
+    width: 100%; 
+    padding: 12px;
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    border: 1px solid;
+    border-radius: 4px;
+    font-size: 10;
+}
+.judulBlog {
+    text-align: center;
+}
+.dataBlog {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.leftBlog {
+    width: 48%;
+}
+.rightBlog {
+    width: 50%;
+    margin-left: 8px;
+}
+.uploadImg {
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 400;
+    padding-right: 8px;
+    margin-top: 2px;
+    margin-bottom: 20px;
+    background: #f4f3f3;
+    border: 1px solid #c4c4c4;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.uploadImg label p {
+    font-size: 15px;
+    margin: 0;
+    background-color: #c4c4c4;
+    padding: 9px 32px;
+    border-radius: 8px 0 0 8px;
+}
+.uploadImg label {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.listBlog {
+    font-family: 'Courier New', Courier, monospace;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.listCt {
+    width: 300px;
+    border-radius: 15px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: #fff;
+    box-shadow: 0px 10px 30px 1px #85858b;
+    margin: 0 8px 38px 8px;
+}
+.imgBlog {
+    border-radius: 15px;
+    width: 100%;
+    height: 200px;
+}
+.imgBlog img {
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+}
+.cardJudul {
+    font-weight: 700;
+    font-size: 22px;
+    color: #112B3C;
+    text-decoration: none;
+}
+.cardIcon{
+    display: flex;
+    align-items: center;
+}
+.cardIcon i {
+    font-size: 28px;
+    margin-right: 18px;
+    color: grey;
+}
+.dskCard {
+    font-size: 14px;
+    margin-bottom: 18px !important;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+.frist {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 14px;
+}
+.fristEdit {
+    width: 42%;
+    text-align: center;
+    padding: 8px;
+    border: 2px solid rgb(104, 97, 87);
+    border-radius: 15px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+.fristDelete {
+    width: 42%;
+    text-align: center;
+    padding: 8px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 15px;
+    color: white;
+    text-decoration: none;
+}
+.blogContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}    
+.checkBox1 {
+    display: flex;
+    margin-bottom: 1.5rem;
+}
+.checkBox2 {
+    display: flex;
+    flex-direction: column;
+    margin-right: 44px;
+}
+.checkBox3 {
+    display: flex;
+    flex-direction: column;
+    margin-right: 44px;
+}
+.teknologiLab {
+    text-align: center;
+    display: block;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+.teknologiLab {
+    font-weight: 700;
+    font-size: 16px;
+}
+.buttonP button {
+    background-color: #111727; 
+    color: whitesmoke; 
+    border-radius: 15px; 
+    margin: 0; 
+    padding: 5px 30px; 
+}
+.detailBox {
+    width: 60%;
+    padding: 30px 20px;
+    border-radius: 30px;
+    margin: 30px auto;
+    background-color: #fff;
+    box-shadow: 0px 10px 30px 1px #85858b;
+    display: flex;
+    justify-content: center;
+}
+  
+.detailContainer {
+    width: 95%;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 2rem 3.5rem;
+}  
+.detailContainer h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+}  
+.logo {
+    display: flex;
+    width: 100%;
+    height: 20rem;
+    margin-bottom: 5rem;
+} 
+.logo .logoBlog {
+    flex: 60%;
+    height: 100%;
+} 
+.logo .logoBlog img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}  
+.logo .cardInfo {
+    flex: 40%;
+    margin-left: 5.5rem;
+    display: flex;
+    flex-direction: column;
+}
+  
+.logo .cardInfo .durasi {
+    margin-bottom: 1.5rem;
+}  
+.info .durasi h4, .cardInfo .tech h4 {
+    margin-bottom: 1rem;
+}
+  
+.cardInfo .tech .stacks {
+    display: flex;
+    font-size: 1rem;
+}
+  
+.tech .stacks .right {
+    margin-left: 1.5rem;
+}
+.blogContent {
+    text-align: justify;
+}
+
